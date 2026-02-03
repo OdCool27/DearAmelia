@@ -11,7 +11,7 @@ const text = ["So, I wanted to do something that stood out. Maybe even sweep you
         "I thank God for our lives intersecting, and I hope it is intended for more than just a season.", "Now, I don't believe in celebrating valentines's day, so I won't ask you to be my valentine.", "But I do have another question:", "And I would be FULLY DUNCE if I didn't ask...",
         `Would you do me the honor of being my girlfriend? (P.S - The 'No' button is just for decoration)`]
 
-const gifs = ["media/1.gif", "media/2.gif", "media/3.gif", "media/4.gif"];
+const gifs = ["media/1.gif", "media/2.gif", "media/3.gif", "media/4.gif", "media/5.gif"];
 const gifContainer = document.querySelector(".gif-container");
 
 let count = 0;
