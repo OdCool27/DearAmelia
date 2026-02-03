@@ -1,0 +1,199 @@
+:root{
+    --primary-color: #a6025a;
+    --secondary-color: #e650a1;
+    --tertiary-color: #f6c9ec;
+    --comp-color: #023029;
+    --fs-18: 1.125rem;
+    --fs-24: 1.5rem;
+    --fs-32: 2.0rem;
+    --fs-50: 3.125rem;
+    --fs-64: 4.0rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to left, #fefbff, #ffebfc) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Dancing Script", cursive;
+    font-size: var(--fs-64);
+    color: var(--primary-color);
+    text-shadow: 3px 3px 5px var(--secondary-color);
+    margin:0;
+}
+
+p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-24);
+    color: black;
+    line-height: 1.5;
+}
+
+button{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-18);
+    font-weight: bold;
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+button:hover{
+    background: #a519a5;
+    color:white;
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+/*=====================================OVERLAY=================================*/
+
+#intro-overlay {
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 1.2s ease-in-out;
+    text-align: center;
+}
+
+#envelope {
+    width: 300px;
+    height: 300px;
+    background: url(media/envelope.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+#envelope:hover {
+    transform: scale(0.8);
+}
+
+
+/*============================================================================*/
+
+.gif-container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.gif-container.show {
+    opacity: 1;
+}
+
+
+.container{
+    max-width: 800px;
+    margin-inline:auto;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.container.fade-out{
+    opacity: 0;
+}
+
+.btn-container1, .btn-container2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.text-container{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.text{
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+}
+
+.text.fade-out{
+    opacity: 0;
+}
+
+
+
+.btn-container2{
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+}
+
+.btn-container2.fade-out{
+    opacity: 0;
+}
+
+.btn-container2.void{
+    display: none;
+}
+
+
+
+#yes{
+    background: #a6025a;
+    color: white;
+    border: 2px solid black;
+}
+
+#no{
+    background: white;
+    color: #a6025a;
+    border: 2px solid #a6025a;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size: var(--fs-50);
+    }
+
+    .text-container{
+        height: 220px;
+    }
+}
