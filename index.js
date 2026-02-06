@@ -7,7 +7,7 @@ const text = ["So, I wanted to do something that stood out. Maybe even sweep you
         "your persistent optimism and faith in the face of trials,",
         "your accountability and willingness assess where you need to improve and work on it,",
         "your tendency to think about others", "Did I mention your beauty?", "You're very beautiful", "Like serious though...",
-        "I love your smile...", "I love your laughter...", "Absolutely Gorgeous! 😍", "Big up Mom and Dad! They did their thing.", "But anyways, long story short - I think you're amazing!",
+        "I love your smile...", "I love your laughter...", "You are absolutely Gorgeous! 😍", "Big up Mom and Dad! They did their thing.", "But anyways, long story short - I think you're amazing!",
         "Each day, I am filled with gratitude for the day we started talking.", "I thank God for our lives intersecting, and I hope it is intended for more than just a season.",
         "Now, I don't believe in celebrating valentines's day, so I won't ask you to be my valentine.", "But I do have another question:", "And I would be fully dunce if I didn't ask...",
         "Would you do me the honor of being my girlfriend?"]
