@@ -52,23 +52,5 @@
     <script src="index.js"></script>
     <script src="extra.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("o75wojGiro08LgGa7");
-        })();
-
-        document.getElementById("yes").addEventListener("click", () => {
-            emailjs.send("to_amelia", "template_jp20sor", {
-                time: new Date().toLocaleString()
-            })
-                .then(() => {
-                    console.log("Email sent 💌");
-                })
-                .catch(err => {
-                    console.error("EmailJS error:", err);
-                });
-        });
-    </script>
 </body>
 </html>
