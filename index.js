@@ -27,6 +27,7 @@ const btnContainer1 = document.querySelector(".btn-container1");
 const btnContainer2 = document.querySelector(".btn-container2");
 const yesBtn = document.getElementById("yes");
 const noBtn = document.getElementById("no");
+const finePrint = document.querySelector(".finePrint");
 let yesScale = 1;
 let noScale = 1;
 
@@ -44,9 +45,11 @@ function changeText(newText) {
 function swapButtons(){
         btnContainer1.style.display = "none";
         btnContainer2.classList.remove("void");
+        finePrint.classList.remove("void");
 
         setTimeout(() => {
                 btnContainer2.classList.remove("fade-out");
+                finePrint.classList.remove("fade-out");
         }, 500); // must match CSS transition duration
 }
 

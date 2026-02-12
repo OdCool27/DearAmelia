@@ -177,11 +177,11 @@ button:active{
     transition: 0.5s opacity ease-in-out;
 }
 
-.btn-container2.fade-out{
+.btn-container2.fade-out, .finePrint.fade-out{
     opacity: 0;
 }
 
-.btn-container2.void{
+.btn-container2.void, .finePrint.void{
     display: none;
 }
 
